@@ -58,6 +58,8 @@ const Participant = {
     score(index){
         console.log(Participant.all[index].nome)
         Participant.all[index].score += 3
+        DOM.updateScore(Participant.all, index)
+
         App.reload()
     }
 }
@@ -106,8 +108,13 @@ const DOM = {
         this.participantsContainer.innerHTML = ""
     },
 
-    updateScore() {
-
+    updateScore(participant, index) {
+        document.querySelector('#last-score').innerHTML = `
+        <h3>
+            <span>Última pontuação</span>
+        </h3>
+        <p>${participant[index].nome}</p>
+        `
     }
 }
 
