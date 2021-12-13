@@ -1,0 +1,26 @@
+{
+  "name": "listaBrunos",
+  "version": "1.0.0",
+  "description": "Lista dos mais Brunos",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conras21/listaBrunos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Conras21/listaBrunos/issues"
+  },
+  "homepage": "https://github.com/Conras21/listaBrunos#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
